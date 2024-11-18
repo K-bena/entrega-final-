@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi portal U</title>
+  <style>
+
+    body {
+        background-image: url('https://unab.edu.co/wp-content/uploads/2022/01/1.-Edificio-Armando-Puyana-Puyana.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+header, footer {
+  width: 100vw; 
+  text-align: center;
+  padding: 20px; 
+  color: white;
+  margin: 0; 
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #ff7f00; 
+  border-radius: 0; 
+  position: relative; 
+}
+
+footer {
+  background-color: black;
+  border-radius: 0;
+  position: fixed; 
+  bottom: 0;
+}
+
+    main {
+      margin: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .formulario {
+      margin-top: 20px;
+    }
+
+    .formulario input {
+      padding: 10px;
+      margin: 5px;
+      border: 2px solid purple;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: purple;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkviolet;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid gray;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    tfoot {
+      font-weight: bold;
+    }
+
+    .oculto {
+      display: none;
+    }
+
+    .volver {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pagina" id="login-page">
+    <header>
+      <h1>Mi portal U</h1>
+    </header>
+    <main>
+      <h2>CONSULTAR NÚMERO DE HORAS LIBRES REALIZADAS</h2>
+      <div class="formulario">
+        <input type="text" placeholder="ID UNAB" id="id-unab">
+        <input type="password" placeholder="Contraseña" id="password">
+        <button id="login-btn">Iniciar Sesión</button>
+        <button class="volver" id="back-btn-login">Volver</button>
+      </div>
+    </main>
+    <footer>
+      <p>Universidad Autónoma de Bucaramanga</p>
+    </footer>
+  </div>
+
+  <div class="pagina oculto" id="registered-hours-page">
+    <header>
+      <h1>Mi portal U</h1>
+    </header>
+    <main>
+      <h2>Sus horas registradas</h2>
+      <p>Acá se verán los eventos a los que ha asistido el estudiante y su equivalente en horas.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Evento</th>
+            <th>Horas ganadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Participación en U libro</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Participación en la semana de ingeniería</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>5</td>
+          </tr>
+        </tfoot>
+      </table>
+      <button class="volver" id="back-btn-hours">Volver</button>
+    </main>
+    <footer>
+      <p>Universidad Autónoma de Bucaramanga</p>
+    </footer>
+  </div>
+
+  <script>
+
+    document.getElementById("login-btn").addEventListener("click", () => {
+      document.getElementById("login-page").classList.add("oculto");
+      document.getElementById("registered-hours-page").classList.remove("oculto");
+    });
+
+    document.getElementById("back-btn-login").addEventListener("click", () => {
+      alert("No hay una página anterior. Ya estás en el inicio.");
+    });
+
+    document.getElementById("back-btn-hours").addEventListener("click", () => {
+      document.getElementById("registered-hours-page").classList.add("oculto");
+      document.getElementById("login-page").classList.remove("oculto");
+    });
+  </script>
+</body>
+</html>
+

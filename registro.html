@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .header {
+            width: 100%;
+            background-color: #ff7f00;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .container {
+            text-align: center;
+            margin-top: 70px; /* Ajustar según la altura de la barra */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .registration-box {
+            background-color: #e0e0e0;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .registration-box div {
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .registration-box div input {
+            margin: 5px 0;
+            padding: 10px;
+            width: 200px;
+        }
+        .footer {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .logo {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .logo img {
+            width: 100px;
+        }
+        .button-box {
+            margin-top: 20px;
+        }
+        .button-box a {
+            text-decoration: none;
+            background-color: #ff7f00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <h1>REGISTRO DE USUARIO</h1>
+        <div class="registration-box">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo">
+            </div>
+            <div>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario">
+            </div>
+            <div>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena">
+            </div>
+            <div>
+                <label for="confirmar_contrasena">Confirmar Contraseña</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena">
+            </div>
+        </div>
+        <div class="button-box">
+            <a href="nueva_pagina.html">Siguiente</a> <!-- Cambia "nueva_pagina.html" al enlace deseado -->
+        </div>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Logo_unab.png/1200px-Logo_unab.png" alt="unab">
+            <p>Universidad Autónoma de Bucaramanga</p>
+            <p>VIGILADA MINEDUCACIÓN</p>
+        </div>
+    </div>
+    <div class="footer">
+        Universidad Autónoma de Bucaramanga
+    </div>
+</body>
+</html>

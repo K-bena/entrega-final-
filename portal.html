@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portal U</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('https://unab.edu.co/wp-content/uploads/2022/01/1.-Edificio-Armando-Puyana-Puyana.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        .header {
+            width: 100%;
+            background-color: #ff7f00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .button {
+            background-color: purple;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #5a0c9a;
+        }
+        .footer {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Mi portal U
+    </div>
+    <div class="container">
+        <h2>APARTADOS</h2>
+        <div class="buttons">
+            <a href="wtf.html" class="button">Horas libres</a> <!-- Cambia "horas_libres.html" a tu archivo -->
+            <a href="eventos_unab.html" class="button">Eventos UNAB</a> <!-- Cambia "eventos_unab.html" a tu archivo -->
+            <a href="noticias.html" class="button">Noticias</a> <!-- Cambia "noticias.html" a tu archivo -->
+            <a href="servicios_electronicos.html" class="button">Servicios electrónicos</a> <!-- Cambia "servicios_electronicos.html" a tu archivo -->
+        </div>
+    </div>
+    <div class="footer">
+        Universidad Autónoma de Bucaramanga
+    </div>
+</body>
+</html>

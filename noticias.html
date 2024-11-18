@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portal U</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ffa726;
+            color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 2fr; /* Banco de noticias a la izquierda, artículos a la derecha */
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .article-box {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .article-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .news {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-header {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .news-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .news-table th, .news-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .news-table th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Mi portal U</div>
+        <div>Icon</div>
+    </header>
+    <div class="container">
+        <!-- News Section -->
+        <div class="news">
+            <div class="news-header">NOTICIAS UNAB</div>
+            <table class="news-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conferencia sobre innovación educativa</td>
+                        <td>La UNAB organiza una conferencia sobre innovación en la enseñanza, con expertos invitados del ámbito nacional e internacional.</td>
+                    </tr>
+                    <tr>
+                        <td>Nuevo edificio de laboratorios</td>
+                        <td>La Universidad Autónoma de Bucaramanga inaugura un moderno edificio de laboratorios, equipado con tecnología de punta.</td>
+                    </tr>
+                    <tr>
+                        <td>Programa de becas 2024</td>
+                        <td>Se abre la convocatoria para el nuevo programa de becas que beneficiará a estudiantes destacados de la universidad.</td>
+                    </tr>
+                    <tr>
+                        <td>Premio a la investigación</td>
+                        <td>Un grupo de investigadores de la UNAB ha sido galardonado por sus avances en inteligencia artificial y análisis de datos.</td>
+                    </tr>
+                    <tr>
+                        <td>Expo UNAB 2024</td>
+                        <td>La universidad invita a la comunidad a participar en la feria anual Expo UNAB, donde se presentarán proyectos innovadores y actividades culturales.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Articles Section -->
+        <div class="articles">
+            <div class="article-box">
+                <h3>Artículo 1</h3>
+                <p>*Nueva noticia: Expo UNAB 2024*</p>
+                <p>La universidad invita a la comunidad a participar en la feria anual donde se presentarán proyectos innovadores y actividades culturales.</p>
+            </div>
+            <div class="article-box">
+                <h3>Artículo 2</h3>
+                <p>Conferencia sobre innovación educativa: La UNAB organiza una conferencia sobre innovación en la enseñanza, con expertos invitados del ámbito nacional e internacional.</p>
+            </div>
+            <div class="article-box">
+                <h3>Artículo 3</h3>
+                <p>Nuevo edificio de laboratorios: La Universidad Autónoma de Bucaramanga inaugura un moderno edificio de laboratorios, equipado con tecnología de punta.</p>
+            </div>
+            <div class="article-box">
+                <h3>Artículo 4</h3>
+                <p>Programa de becas 2024: Se abre la convocatoria para el nuevo programa de becas que beneficiará a estudiantes destacados de la universidad.</p>
+            </div>
+            <div class="article-box">
+                <h3>Artículo 5</h3>
+                <p>Premio a la investigación: Un grupo de investigadores de la UNAB ha sido galardonado por sus avances en inteligencia artificial y análisis de datos.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
